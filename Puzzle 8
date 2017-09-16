@@ -1,0 +1,60 @@
+function repeatSeven(direction) {
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+}
+
+down();
+
+var sequence = 0
+while ( sequence < 5 ){
+  var direction;
+  if (sequence % 2 == 0) {
+    direction = down;
+  } else {
+    direction = up;
+  }
+  repeatSeven(direction);
+  sequence = sequence + 1;
+}
+--------------------------------
+
+
+
+function directiondown(){
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+  down();
+  right();
+}
+function directionup(){
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+  up();
+  right();
+
+}
+
+down();
+directiondown();
+right();
+directionup();
+right();
+directiondown();
+right();
+directionup();
+right();
+directiondown();
+
