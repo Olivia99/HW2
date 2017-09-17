@@ -1,3 +1,24 @@
+down();
+var number=0
+while(number<2){
+if(number==0){
+  for(olivia=0; olivia<7; olivia++){
+    down();
+  }
+  right();
+  right();
+}if(number==1){
+  for(olivia=0; olivia<7; olivia++){
+    up();
+  }
+  right();
+  right();
+}
+
+  number=1-number;
+}
+-----------------------------------------
+
 function repeatSeven(direction) {
   direction();
   direction();
