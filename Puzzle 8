@@ -9,7 +9,33 @@ function repeatSeven(direction) {
 }
 
 down();
+var number=0
+while(number<2){
+  var direction;
+if(number==0){
+  direction=down;
+}else {
+  direction=up;
+}
+    repeatSeven(direction);
+  right();
+  right();
+  
+ number=1-number;
+}
+------------------------------------
 
+function repeatSeven(direction) {
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+  direction();
+}
+
+down();
 var sequence = 0
 while ( sequence < 5 ){
   var direction;
@@ -17,10 +43,13 @@ while ( sequence < 5 ){
     direction = down;
   } else {
     direction = up;
-  }
+}
   repeatSeven(direction);
+  right();
+  right();
   sequence = sequence + 1;
 }
+right();
 --------------------------------
 
 
